@@ -144,12 +144,12 @@ const Navbar = () => {
         />
       </div>
       <nav>
-        <Link href="">Úvod</Link>
-        <Link href="">O nás</Link>
-        <Link href="">Solária</Link>
-        <Link href="">Fotografie</Link>
-        <Link href="">Ceník</Link>
-        <Link href="">Kontakt</Link>
+        <Link href="/">Úvod</Link>
+        <Link href="/o-nas">O nás</Link>
+        <Link href="/solaria">Solária</Link>
+        <Link href="/fotografie">Fotografie</Link>
+        <Link href="/cenik">Ceník</Link>
+        <Link href="#footer">Kontakt</Link>
       </nav>
       <div className="menu-button" onClick={() => setOpen(true)}>
         <FontAwesomeIcon icon={faBars} />
@@ -157,12 +157,12 @@ const Navbar = () => {
       {open ? (
         <div className="menu">
           <div className="flex" ref={ref}>
-            <Link href="">Úvod</Link>
-            <Link href="">O nás</Link>
-            <Link href="">Solária</Link>
-            <Link href="">Fotografie</Link>
-            <Link href="">Ceník</Link>
-            <Link href="">Kontakt</Link>
+            <Link href="/">Úvod</Link>
+            <Link href="/o-nas">O nás</Link>
+            <Link href="/solaria">Solária</Link>
+            <Link href="/fotografie">Fotografie</Link>
+            <Link href="/cenik">Ceník</Link>
+            <Link href="#footer">Kontakt</Link>
           </div>
         </div>
       ) : (

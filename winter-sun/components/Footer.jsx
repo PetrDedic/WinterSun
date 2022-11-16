@@ -63,7 +63,7 @@ const StyledFooter = styled.footer`
 
 const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter id="footer">
       <div className="flex" style={{ maxWidth: 1920, margin: "auto" }}>
         <div className="text">
           <Link className="link" href="">
