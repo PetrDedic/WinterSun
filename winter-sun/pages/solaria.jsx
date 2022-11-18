@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Script from "next/script";
+import Accordion from "../components/Accordion";
 
 const Main = styled.main`
   margin-top: 8rem;
@@ -16,6 +17,179 @@ const Main = styled.main`
   background-image: url("./background.svg");
   background-size: cover;
   background-position: top;
+
+  .solaria {
+    width: calc(100% - 16rem);
+    @media (max-width: 1280px) {
+      width: calc(100% - 8rem);
+    }
+    max-width: 1920px;
+    height: auto;
+    margin: 4rem auto;
+
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      width: calc(100% - 4rem);
+    }
+    gap: 4rem;
+
+    .solarium {
+      width: 100%;
+      height: auto;
+
+      .info-text {
+        margin: 2rem 0;
+        font-size: 1.25rem;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+
+      .image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        position: relative;
+
+        .image-text {
+          display: flex;
+          flex-direction: column;
+          -webkit-box-shadow: inset 0px -114px 100px -30px rgba(0, 0, 0, 0.9);
+          -moz-box-shadow: inset 0px -114px 100px -30px rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0px -114px 100px -30px rgba(0, 0, 0, 0.9);
+          border-radius: 2rem;
+
+          h2 {
+            margin-top: auto;
+            padding: 0 2rem;
+
+            color: #ebebeb;
+
+            span {
+              color: #ffffff;
+            }
+          }
+          p {
+            padding: 0 0 2rem 2rem;
+            color: #cfcfcf;
+
+            span {
+              background: linear-gradient(
+                to right,
+                #6666ff,
+                #0099ff,
+                #00ff00,
+                #ff3399,
+                #6666ff
+              );
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              animation: rainbow_animation 6s ease-in-out infinite;
+              background-size: 400% 100%;
+
+              @keyframes rainbow_animation {
+                0%,
+                100% {
+                  background-position: 0 0;
+                }
+
+                50% {
+                  background-position: 100% 0;
+                }
+              }
+            }
+          }
+
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+        }
+
+        .colors {
+          position: absolute;
+          bottom: -1rem;
+          right: 2rem;
+          height: 2rem;
+          width: auto;
+
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+
+          .circle {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 100%;
+            background-color: #f1f1f1;
+
+            &:hover {
+              span {
+                opacity: 1;
+              }
+              cursor: pointer;
+            }
+
+            span {
+              opacity: 0;
+              transition: 250ms;
+
+              position: absolute;
+              top: -3rem;
+              background-color: white;
+
+              left: 0;
+              right: 0;
+              margin-left: auto;
+              margin-right: auto;
+
+              text-align: center;
+              padding: 0.5rem;
+              width: calc(100% + 1rem);
+
+              white-space: nowrap;
+
+              border-radius: 1rem;
+            }
+
+            div {
+              width: 1.35rem;
+              height: 1.35rem;
+
+              margin: 0.35rem;
+
+              border-radius: 100%;
+
+              &.blue {
+                background-color: #3dffff;
+              }
+              &.green {
+                background-color: #50c878;
+              }
+              &.red {
+                background-color: #ff3c3c;
+              }
+              &.yellow {
+                background-color: #ffbf00;
+              }
+            }
+          }
+        }
+
+        img {
+          object-fit: cover;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
 `;
 
 export default function Home() {
@@ -34,7 +208,181 @@ export default function Home() {
       <Navbar />
 
       <Main>
-        <h1>Solární studio Winter Sun</h1>
+        <div className="solaria">
+          <div className="solarium">
+            <div className="image">
+              <Image src="/ergoline-600.jpg" fill sizes="100vw" />
+              <div className="image-text">
+                <h2>
+                  Ergoline Excellence <span>900</span>
+                </h2>
+                <p>Turbo Power - Hybrid Performance - 🔥</p>
+              </div>
+            </div>
+            <p className="info-text">
+              Solárium Ergoline Excellence 900 představuje vylepšenou opalovací
+              metodu <span>Hybrid Performance a Beauty</span>, čímž stanovuje
+              nové standardy v oblasti opalovacích technologií. Unikátní
+              kombinace <span>UV záření a červeného světla</span> dokáže
+              vykouzlit atraktivní a <span>dlouhodobé opálení</span> společně s
+              <span>anti age účinky</span> omlazující péče o pleť. <br />
+              <br />
+              <span>Aquafresh a Aromafresh</span> pro osvěžující opálení a
+              neutralizovaný UV zápach, která automaticky spojuje revitalizační
+              nebo relaxační program. <br />
+              <br />
+              <span>Climatronic</span> pro požadovanou teplotu a{" "}
+              <span>Vibra Sound</span> pro zcela nový zvuk. Ergonomicky
+              tvarovaná akrylová deska poskytuje relaxační opalování.
+            </p>
+            <Accordion
+              header="UV-Technologie"
+              text={
+                <ul>
+                  <li>Trubice: 51 x 160W Turbo Power</li>
+                  <li>Typ trubic: Max Warp X-Press / Oxy Tan</li>
+                  <li>Obličejové výbojky: 4x 520W Ultra VIT Max</li>
+                  <li>Ramenní opalovače: 7 x 25W</li>
+                  <li>Opalovač šíje: 6 x 25W</li>
+                </ul>
+              }
+            />
+            <Accordion
+              header="Design"
+              text={
+                <ul>
+                  <li>Osvětlení interiéru</li>
+                  <li>Osvětlení podstavce</li>
+                  <li>Osvětlení s animovaným efektem</li>
+                  <li>Efektivní osvětlení pohotovostního režimu</li>
+                </ul>
+              }
+            />
+            <Accordion
+              header="Komfort"
+              text={
+                <ul>
+                  <li>Komfortní chlazení</li>
+                  <li>3D zvuk</li>
+                  <li>Stereo Sound</li>
+                  <li>Body Wave Light</li>
+                  <li>
+                    2-okružní chlazení těla, samostatně ovladatelné, dodatečné
+                    chlazení obličeje
+                  </li>
+                  <li>Aqua Fresh 2</li>
+                  <li>Aroma</li>
+                  <li>Climatronic</li>
+                  <li>Multivision</li>
+                  <li>Samostatně klimatizované lehátko</li>
+                </ul>
+              }
+            />
+            <Accordion
+              header="Ovládání"
+              text={
+                <ul>
+                  <li>Uživatelský panel s LED displejem</li>
+                  <li>Tlačítko info k tématu opalování</li>
+                </ul>
+              }
+            />
+          </div>
+          <div className="solarium">
+            <div className="image">
+              <Image src="/ergoline-green.jpg" fill sizes="100vw" />
+              <div className="image-text">
+                <h2>
+                  Ergoline Evolution <span>600</span>
+                </h2>
+                <p>
+                  Turbo Power <span>- Rainbow Light -</span>
+                </p>
+              </div>
+
+              <div className="colors">
+                <div className="circle">
+                  <div className="blue"></div>
+                  <span>Čistá a bezchybná pleť</span>
+                </div>
+                <div className="circle">
+                  <div className="green"></div>
+                  <span>Regenerace a relaxace</span>
+                </div>
+                <div className="circle">
+                  <div className="red"></div>
+                  <span>Krásná a hladká kůže</span>
+                </div>
+                <div className="circle">
+                  <div className="yellow"></div>
+                  <span>Radost ze slunce</span>
+                </div>
+              </div>
+            </div>
+            <p className="info-text">
+              Solárium Ergoline Evolution 600 představuje vylepšenou opalovací
+              metodu díky opalovacím trubicím{" "}
+              <span>Rainbow Light (Duhové světlo)</span>. <br />
+              <br />
+              <span>Climatronic</span> pro požadovanou teplotu a{" "}
+              <span>Vibra Sound</span> pro zcela nový zvuk.
+              <br />
+              <br />
+              <span>Ergonomicky tvarovaná akrylová deska</span> poskytuje
+              relaxační opalování.
+            </p>
+            <Accordion
+              header="UV-Technologie"
+              text={
+                <ul>
+                  <li>Trubice: 46 x 160W Turbo Power</li>
+                  <li>Typ trubic: Rainbow Light</li>
+                  <li>Obličejové výbojky: 3x 500W + Ultra VIT Max Ramenní</li>
+                  <li>Opalovače: 7 x 25W Opalovač šíje - 6 x 25W</li>
+                </ul>
+              }
+            />
+            <Accordion
+              header="Design"
+              text={
+                <ul>
+                  <li>Osvětlení interiéru</li>
+                  <li>Osvětlení podstavce</li>
+                  <li>Osvětlení s animovaným efektem</li>
+                  <li>Efektivní osvětlení pohotovostního režimu</li>
+                </ul>
+              }
+            />
+            <Accordion
+              header="Komfort"
+              text={
+                <ul>
+                  <li>Komfortní chlazení</li>
+                  <li>3D zvuk</li>
+                  <li>Stereo Sound</li>
+                  <li>Body Soft</li>
+                  <li>
+                    2-okružní chlazení těla, samostatně ovladatelné, dodatečné
+                    chlazení obličeje
+                  </li>
+                  <li>4-stupňové nastavitelné opalování obličeje</li>
+                  <li>Aroma</li>
+                  <li>AC Plus</li>
+                  <li>Multivision</li>
+                </ul>
+              }
+            />
+            <Accordion
+              header="Ovládání"
+              text={
+                <ul>
+                  <li>Uživatelský panel s LED displejem</li>
+                  <li>Tlačítko info k tématu opalování</li>
+                </ul>
+              }
+            />
+          </div>
+        </div>
       </Main>
       <Footer />
     </>

@@ -109,10 +109,10 @@ export default function Home() {
       <Main>
         <div className="cta">
           <div className="image">
-            <Image src="/ergoline-600.jpg" fill alt="cta-image" sizes="75vw" />
+            <Image src="/water.jpg" fill alt="cta-image water" sizes="75vw" />
           </div>
           <div className="text">
-            <h1>Solární studio Winter Sun</h1>
+            <h1>Solární studio JJ</h1>
             <p>
               Přijďte si odpočinout do našeho nového solárního studia, zažijte
               dokonalé opálení a získejte překrásný vzhled pokožky. Navíc
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
         </div>
         <p className="info">
-          <span>Navštivte solární studio Winter Sun</span> a my vám připravíme{" "}
+          <span>Navštivte solární studio JJ</span> a my vám připravíme{" "}
           <span>individuální opalovací plán</span> tak, abyste dosáhli zdravého,
           správného a efektivního opálení. První návštěvy byste měli absolvovat
           v kratších rozestupech, nejlépe několikrát týdně, abychom ve vaší
@@ -150,7 +150,7 @@ export default function Home() {
             </p>
           </div>
           <div className="image">
-            <Image src="/sezeni.jpg" fill alt="sezeni" sizes="75vw" />
+            <Image src="/tequila.jpg" fill alt="tequila" sizes="75vw" />
           </div>
         </div>
       </Main>

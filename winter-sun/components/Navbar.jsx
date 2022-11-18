@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import { useClickOutside } from "../hooks/useClickOutside";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -27,6 +28,11 @@ const StyledNavbar = styled.div`
 
   @media (max-width: 1280px) {
     height: 4rem;
+  }
+
+  .active {
+    color: black;
+    font-weight: 500;
   }
 
   .logo {
@@ -127,6 +133,9 @@ const StyledNavbar = styled.div`
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   const ref = useRef(null);
   useClickOutside(ref, () => setOpen(false));
 
@@ -144,11 +153,33 @@ const Navbar = () => {
         />
       </div>
       <nav>
-        <Link href="/">Úvod</Link>
-        <Link href="/o-nas">O nás</Link>
-        <Link href="/solaria">Solária</Link>
-        <Link href="/fotografie">Fotografie</Link>
-        <Link href="/cenik">Ceník</Link>
+        <Link href="/" className={currentRoute === "/" ? "active" : ""}>
+          Úvod
+        </Link>
+        <Link
+          href="/o-nas"
+          className={currentRoute === "/o-nas" ? "active" : ""}
+        >
+          O nás
+        </Link>
+        <Link
+          href="/solaria"
+          className={currentRoute === "/solaria" ? "active" : ""}
+        >
+          Solária
+        </Link>
+        <Link
+          href="/fotografie"
+          className={currentRoute === "/fotografie" ? "active" : ""}
+        >
+          Fotografie
+        </Link>
+        <Link
+          href="/cenik"
+          className={currentRoute === "/cenik" ? "active" : ""}
+        >
+          Ceník
+        </Link>
         <Link href="#footer">Kontakt</Link>
       </nav>
       <div className="menu-button" onClick={() => setOpen(true)}>
@@ -157,11 +188,33 @@ const Navbar = () => {
       {open ? (
         <div className="menu">
           <div className="flex" ref={ref}>
-            <Link href="/">Úvod</Link>
-            <Link href="/o-nas">O nás</Link>
-            <Link href="/solaria">Solária</Link>
-            <Link href="/fotografie">Fotografie</Link>
-            <Link href="/cenik">Ceník</Link>
+            <Link href="/" className={currentRoute === "/" ? "active" : ""}>
+              Úvod
+            </Link>
+            <Link
+              href="/o-nas"
+              className={currentRoute === "/o-nas" ? "active" : ""}
+            >
+              O nás
+            </Link>
+            <Link
+              href="/solaria"
+              className={currentRoute === "/solaria" ? "active" : ""}
+            >
+              Solária
+            </Link>
+            <Link
+              href="/fotografie"
+              className={currentRoute === "/fotografie" ? "active" : ""}
+            >
+              Fotografie
+            </Link>
+            <Link
+              href="/cenik"
+              className={currentRoute === "/cenik" ? "active" : ""}
+            >
+              Ceník
+            </Link>
             <Link href="#footer">Kontakt</Link>
           </div>
         </div>

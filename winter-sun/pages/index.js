@@ -9,7 +9,6 @@ import Script from "next/script";
 const Main = styled.main`
   width: 100%;
   height: auto;
-  background-color: #f1f1f1;
 
   section.main {
     background-image: url("./background.svg");
