@@ -166,6 +166,7 @@ const Sections = styled.section`
   .card {
     width: 100%;
     aspect-ratio: 4 / 5;
+    text-decoration: none;
 
     @media (max-width: 900px) {
       max-width: 420px;
@@ -291,15 +292,15 @@ export default function Home() {
             </div>
           </div>
           <Sections>
-            <div className="card about">
+            <Link href="/o-nas" className="card about">
               <p>O NÁS</p>
-            </div>
-            <div className="card solarium">
+            </Link>
+            <Link href="/solaria" className="card solarium">
               <p>SOLÁRIA</p>
-            </div>
-            <div className="card price">
+            </Link>
+            <Link href="/cenik" className="card price">
               <p>CENÍK</p>
-            </div>
+            </Link>
           </Sections>
         </section>
       </Main>

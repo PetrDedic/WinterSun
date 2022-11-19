@@ -5,9 +5,17 @@ import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Script from "next/script";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Slider from "react-slick";
 
 const Main = styled.main`
   margin-top: 8rem;
+
+  *:focus {
+    outline: none;
+  }
 
   width: 100%;
   height: auto;
@@ -16,9 +24,63 @@ const Main = styled.main`
   background-image: url("./background.svg");
   background-size: cover;
   background-position: top;
+
+  .center {
+    position: relative;
+    height: 80vh;
+  }
+
+  #gal:-webkit-full-screen {
+    .gallery {
+      margin: 5vh 5vw;
+      height: 90vh;
+      width: 90vw;
+    }
+
+    img {
+      margin-top: 10vh;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+    }
+  }
+
+  .gallery {
+    height: 80vh;
+    width: 100%;
+    img {
+      max-width: 90vw;
+      max-height: 70vh;
+      margin: auto;
+
+      object-fit: contain;
+    }
+  }
 `;
 
 export default function Home() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+  };
+
+  const openFullscreen = () => {
+    document
+      .getElementById("gal")
+      ?.requestFullscreen({ navigationUI: "show" })
+      .then(() => {})
+      .catch((err) => {
+        alert(
+          `An error occurred while trying to switch into fullscreen mode: ${err.message} (${err.name})`
+        );
+      });
+  };
+
   return (
     <>
       <Head>
@@ -34,7 +96,73 @@ export default function Home() {
       <Navbar />
 
       <Main>
-        <h1>Solární studio Winter Sun</h1>
+        <div id="gal" onClick={() => openFullscreen()}>
+          <Slider {...settings} className="gallery">
+            <div className="center">
+              <Image src="/img1.jpg" alt="img1.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img2.jpg" alt="img2.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img3.jpg" alt="img3.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img4.jpg" alt="img4.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img5.jpg" alt="img5.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img6.jpg" alt="img6.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img7.jpg" alt="img7.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img8.jpg" alt="img8.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img9.jpg" alt="img9.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img10.jpg" alt="img10.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img11.jpg" alt="img11.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img12.jpg" alt="img12.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img13.jpg" alt="img13.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img14.jpg" alt="img14.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img15.jpg" alt="img15.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img16.jpg" alt="img16.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img17.jpg" alt="img17.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img18.jpg" alt="img18.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img19.jpg" alt="img19.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img20.jpg" alt="img20.jpg" fill sizes="100vw" />
+            </div>
+            <div className="center">
+              <Image src="/img21.jpg" alt="img21.jpg" fill sizes="100vw" />
+            </div>
+          </Slider>
+        </div>
       </Main>
       <Footer />
     </>
