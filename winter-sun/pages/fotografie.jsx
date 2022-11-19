@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Script from "next/script";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { MagicSpinner } from "react-spinners-kit";
 
 import Slider from "react-slick";
 
@@ -99,67 +100,193 @@ export default function Home() {
         <div id="gal" onClick={() => openFullscreen()}>
           <Slider {...settings} className="gallery">
             <div className="center">
-              <Image src="/img1.jpg" alt="img1.jpg" fill sizes="100vw" />
+              <Image
+                src="/img1.jpg"
+                alt="img1.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img2.jpg" alt="img2.jpg" fill sizes="100vw" />
+              <Image
+                src="/img2.jpg"
+                alt="img2.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img3.jpg" alt="img3.jpg" fill sizes="100vw" />
+              <Image
+                src="/img3.jpg"
+                alt="img3.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img4.jpg" alt="img4.jpg" fill sizes="100vw" />
+              <Image
+                src="/img4.jpg"
+                alt="img4.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img5.jpg" alt="img5.jpg" fill sizes="100vw" />
+              <Image
+                src="/img5.jpg"
+                alt="img5.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img6.jpg" alt="img6.jpg" fill sizes="100vw" />
+              <Image
+                src="/img6.jpg"
+                alt="img6.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img7.jpg" alt="img7.jpg" fill sizes="100vw" />
+              <Image
+                src="/img7.jpg"
+                alt="img7.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img8.jpg" alt="img8.jpg" fill sizes="100vw" />
+              <Image
+                src="/img8.jpg"
+                alt="img8.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img9.jpg" alt="img9.jpg" fill sizes="100vw" />
+              <Image
+                src="/img9.jpg"
+                alt="img9.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img10.jpg" alt="img10.jpg" fill sizes="100vw" />
+              <Image
+                src="/img10.jpg"
+                alt="img10.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img11.jpg" alt="img11.jpg" fill sizes="100vw" />
+              <Image
+                src="/img11.jpg"
+                alt="img11.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img12.jpg" alt="img12.jpg" fill sizes="100vw" />
+              <Image
+                src="/img12.jpg"
+                alt="img12.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img13.jpg" alt="img13.jpg" fill sizes="100vw" />
+              <Image
+                src="/img13.jpg"
+                alt="img13.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img14.jpg" alt="img14.jpg" fill sizes="100vw" />
+              <Image
+                src="/img14.jpg"
+                alt="img14.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img15.jpg" alt="img15.jpg" fill sizes="100vw" />
+              <Image
+                src="/img15.jpg"
+                alt="img15.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img16.jpg" alt="img16.jpg" fill sizes="100vw" />
+              <Image
+                src="/img16.jpg"
+                alt="img16.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img17.jpg" alt="img17.jpg" fill sizes="100vw" />
+              <Image
+                src="/img17.jpg"
+                alt="img17.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img18.jpg" alt="img18.jpg" fill sizes="100vw" />
+              <Image
+                src="/img18.jpg"
+                alt="img18.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img19.jpg" alt="img19.jpg" fill sizes="100vw" />
+              <Image
+                src="/img19.jpg"
+                alt="img19.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img20.jpg" alt="img20.jpg" fill sizes="100vw" />
+              <Image
+                src="/img20.jpg"
+                alt="img20.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
             <div className="center">
-              <Image src="/img21.jpg" alt="img21.jpg" fill sizes="100vw" />
+              <Image
+                src="/img21.jpg"
+                alt="img21.jpg"
+                fill
+                sizes="100vw"
+                priority
+              />
             </div>
           </Slider>
         </div>
