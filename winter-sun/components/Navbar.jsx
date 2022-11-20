@@ -142,15 +142,17 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <div className="logo">
-        <Image
-          src="/logo_svg.svg"
-          fill
-          alt="logo"
-          priority
-          sizes="(max-width: 768px) 20vw,
+        <Link href="/">
+          <Image
+            src="/logo_svg.svg"
+            fill
+            alt="logo"
+            priority
+            sizes="(max-width: 768px) 20vw,
               (max-width: 1200px) 20vw,
               20vw"
-        />
+          />
+        </Link>
       </div>
       <nav>
         <Link href="/" className={currentRoute === "/" ? "active" : ""}>
@@ -180,7 +182,12 @@ const Navbar = () => {
         >
           Ceník
         </Link>
-        <Link href="#footer">Kontakt</Link>
+        <Link
+          href="/kontakt"
+          className={currentRoute === "/kontakt" ? "active" : ""}
+        >
+          Kontakt
+        </Link>
       </nav>
       <div className="menu-button" onClick={() => setOpen(true)}>
         <FontAwesomeIcon icon={faBars} />
@@ -215,7 +222,12 @@ const Navbar = () => {
             >
               Ceník
             </Link>
-            <Link href="#footer">Kontakt</Link>
+            <Link
+              href="/kontakt"
+              className={currentRoute === "/kontakt" ? "active" : ""}
+            >
+              Kontakt
+            </Link>
           </div>
         </div>
       ) : (

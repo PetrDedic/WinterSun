@@ -25,7 +25,8 @@ const Main = styled.main`
     }
     max-width: 1920px;
     height: auto;
-    margin: 4rem auto;
+    margin: auto;
+    padding: 2rem 0 4rem 0;
 
     display: flex;
     flex-direction: row;
