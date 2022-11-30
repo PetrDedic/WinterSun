@@ -175,10 +175,13 @@ const Contact = () => {
         <div className="time">
           <div className="flex">
             <p>
-              <span>Po - Pá:</span> 11:00 - 19:00
+              <span>Po - Pá:</span> 9:00 - 19:00
             </p>
             <p>
-              <span className="left">So:</span> 14:00 - 18:00
+              <span className="left">So - Ne:</span> Dle objednávek
+            </p>
+            <p>
+              <span className="left">Státní svátky:</span> Dle objednávek
             </p>
           </div>
         </div>
@@ -201,18 +204,18 @@ const Contact = () => {
               </span>
             </a>
             <br />
-            <a href="mailto:solarnistudiojj@seznam.cz">
-              E-mail: <span>solarnistudiojj@seznam.cz</span>
+            <a href="mailto: solarnistudiojj@gmail.com">
+              E-mail: <span>solarnistudiojj@gmail.com</span>
             </a>
           </div>
         </div>
 
         <div className="kontakt">
           <div className="image">
-            <Image src="/img18.jpg" fill sizes="50vw" />
+            <Image src="/contact1.webp" fill sizes="50vw" />
           </div>
           <div className="image">
-            <Image src="/img19.jpg" fill sizes="50vw" />
+            <Image src="/contact2.webp" fill sizes="50vw" />
           </div>
           <div className="image">
             <Image src="/img20.jpg" fill sizes="50vw" />

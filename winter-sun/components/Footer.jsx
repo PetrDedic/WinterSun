@@ -83,8 +83,8 @@ const Footer = () => {
               </span>
             </a>
             <br />
-            <a href="mailto:solarnistudiojj@seznam.cz">
-              E-mail: <span>solarnistudiojj@seznam.cz</span>
+            <a href="mailto: solarnistudiojj@gmail.com">
+              E-mail: <span>solarnistudiojj@gmail.com</span>
             </a>
           </div>
           <p>Parkoviště u solárního studia zdarma !!!</p>

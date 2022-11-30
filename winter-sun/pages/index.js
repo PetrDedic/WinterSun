@@ -134,7 +134,7 @@ const Hero = styled.div`
     height: 100vh;
     width: 100vw;
     content: "";
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
   }
 
   .logo {

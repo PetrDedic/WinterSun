@@ -270,24 +270,6 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="center">
-              <Image
-                src="/img20.jpg"
-                alt="img20.jpg"
-                fill
-                sizes="100vw"
-                priority
-              />
-            </div>
-            <div className="center">
-              <Image
-                src="/img21.jpg"
-                alt="img21.jpg"
-                fill
-                sizes="100vw"
-                priority
-              />
-            </div>
           </Slider>
         </div>
       </Main>
