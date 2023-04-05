@@ -10,6 +10,19 @@ const Main = styled.main`
   width: 100%;
   height: auto;
 
+  .easter {
+    max-width: 80vw;
+    max-height: 65vh;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2rem;
+    margin: auto;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+      0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+      0 16px 16px rgba(0, 0, 0, 0.12);
+  }
+
   section.main {
     background-image: url("./background.svg");
     background-size: cover;
@@ -269,6 +282,19 @@ export default function Home() {
           </div>
         </Hero>
         <section className="main">
+          <picture>
+            <source media="(max-width: 599px)" srcset="ig_stories.png" />
+            <source
+              media="(min-width: 600px)"
+              srcset="facebook_prispevek.png"
+            />
+            <img
+              className="easter"
+              src="facebook_prispevek.png"
+              alt="Velikonoce"
+            />
+          </picture>
+
           <div className="cta">
             <div className="cta-image">
               <Image
