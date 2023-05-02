@@ -282,19 +282,6 @@ export default function Home() {
           </div>
         </Hero>
         <section className="main">
-          <picture>
-            <source media="(max-width: 599px)" srcset="ig_stories.png" />
-            <source
-              media="(min-width: 600px)"
-              srcset="facebook_prispevek.png"
-            />
-            <img
-              className="easter"
-              src="facebook_prispevek.png"
-              alt="Velikonoce"
-            />
-          </picture>
-
           <div className="cta">
             <div className="cta-image">
               <Image
