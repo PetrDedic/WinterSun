@@ -110,45 +110,32 @@ export default function Home() {
       <Main>
         <div className="cenik">
           <h1>Ceník</h1>
-          <p className="since">platné od 1.12 2022</p>
+          <p className="since">platné od 1.1 2024</p>
           <div className="perm">
             <p>
-              <span>Permanentka</span> v hodnotě 1000 Kč, zaplatíte pouze 900
-              Kč, platnost 6 měsíců.
+              <span>45</span> minut za <span>1000,- Kč</span> na 6 měsíců
             </p>
             <p>
-              <span>Permanentka</span> v hodnotě 1500 Kč, zaplatíte pouze 1300
-              Kč, platnost 7 měsíců.
+              <span>70</span> minut za <span>1500,- Kč</span> na 7 měsíců
             </p>
             <p>
-              <span>Permanentka</span> v hodnotě 2000 Kč, zaplatíte pouze 1700
-              Kč, platnost 8 měsíců.
+              <span>95</span> minut za <span>2000,- Kč</span> na 8 měsíců
             </p>
             <p>
-              <span>Permanentka</span> v hodnotě 2500 Kč, zaplatíte pouze 2000
-              Kč, platnost 9 měsíců.
+              <span>120</span> minut za <span>2500,- Kč</span> na 9 měsíců
             </p>
             <p>
-              <span>Permanentka</span> v hodnotě 3000 Kč, zaplatíte pouze 2300
-              Kč, platnost 10 měsíců.
-            </p>
-            <p>
-              <span>Permanentka</span> v hodnotě 3500 Kč, zaplatíte pouze 2600
-              Kč, platnost 11 měsíců.
-            </p>
-            <p>
-              <span>Permanentka</span> v hodnotě 4000 Kč, zaplatíte pouze 2800
-              Kč, platnost 12 měsíců.
+              <span>145</span> minut za <span>3000,- Kč</span> na 10 měsíců
             </p>
           </div>
           <h2>Cena solárií při jednorázové návštěvě</h2>
           <p className="one">
             <span className="dark">Ergoline Excellence 900 Turbo Power</span> -
-            Hybrid Performance - <span className="pink">21 Kč/min</span>
+            Hybrid Performance - <span className="pink">24 Kč/min</span>
           </p>
           <p className="one">
             <span className="dark">Ergoline Evolution 600 Turbo Power</span> -
-            Rainbow Light - <span className="pink">19 Kč/min</span>
+            Rainbow Light - <span className="pink">22 Kč/min</span>
           </p>
         </div>
       </Main>
