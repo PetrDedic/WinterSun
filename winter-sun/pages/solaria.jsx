@@ -240,7 +240,7 @@ export default function Home() {
               header="UV-Technologie"
               text={
                 <ul>
-                  <li>Trubice: 51 x 160W Turbo Power</li>
+                  <li>Trubice: 51 x 160W Tan Extreme Premium</li>
                   <li>Typ trubic: Max Warp X-Press / Oxy Tan</li>
                   <li>Obličejové výbojky: 4x 520W Ultra VIT Max</li>
                   <li>Ramenní opalovače: 7 x 25W</li>
@@ -336,7 +336,7 @@ export default function Home() {
               header="UV-Technologie"
               text={
                 <ul>
-                  <li>Trubice: 46 x 160W Turbo Power</li>
+                  <li>Trubice: 46 x 160W Tan Extreme Premium</li>
                   <li>Typ trubic: Rainbow Light</li>
                   <li>Obličejové výbojky: 3x 500W + Ultra VIT Max Ramenní</li>
                   <li>Opalovače: 7 x 25W Opalovač šíje - 6 x 25W</li>

@@ -175,7 +175,7 @@ const Contact = () => {
         <div className="time">
           <div className="flex">
             <p>
-              <span>Po - Pá:</span> 9:00 - 19:00
+              <span>Po - Pá:</span> 10:00 - 18:00
             </p>
             <p>
               <span className="left">So - Ne:</span> Dle objednávek
