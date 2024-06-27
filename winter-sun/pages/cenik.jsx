@@ -135,7 +135,7 @@ export default function Home() {
           </p>
           <p className="one">
             <span className="dark">Ergoline Evolution 600 Turbo Power</span> -
-            Rainbow Light - <span className="pink">23 Kč/min</span>
+            Tan Extreme Premium - <span className="pink">23 Kč/min</span>
           </p>
         </div>
       </Main>
