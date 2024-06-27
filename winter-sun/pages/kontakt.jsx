@@ -173,6 +173,7 @@ const Contact = () => {
 
       <Main>
         <div className="time">
+          <p style={{ fontWeight: 900 }}>1. 7. 2024 - 31. 8. 2024</p>
           <div className="flex">
             <p>
               <span>Po - Pá:</span> 10:00 - 18:00

@@ -110,7 +110,7 @@ export default function Home() {
       <Main>
         <div className="cenik">
           <h1>Ceník</h1>
-          <p className="since">platné od 1.7 2024</p>
+          <p className="since">platné od 1. 7. 2024</p>
           <div className="perm">
             <p>
               <span>45</span> minut za <span>1000,- Kč</span> na 6 měsíců

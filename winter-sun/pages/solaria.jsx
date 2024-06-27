@@ -226,7 +226,7 @@ export default function Home() {
               nové standardy v oblasti opalovacích technologií. Unikátní
               kombinace <span>UV záření a červeného světla</span> dokáže
               vykouzlit atraktivní a <span>dlouhodobé opálení</span> společně s
-              <span>anti age účinky</span> omlazující péče o pleť. <br />
+              <span> anti age účinky</span> omlazující péče o pleť. <br />
               <br />
               <span>Aquafresh a Aromafresh</span> pro osvěžující opálení a
               neutralizovaný UV zápach, která automaticky spojuje revitalizační
@@ -240,7 +240,7 @@ export default function Home() {
               header="UV-Technologie"
               text={
                 <ul>
-                  <li>Trubice: 51 x 160W Tan Extreme Premium</li>
+                  <li>Trubice: 51 x 160W Tan Extreme Premium Beauty Light</li>
                   <li>Typ trubic: Max Warp X-Press / Oxy Tan</li>
                   <li>Obličejové výbojky: 4x 520W Ultra VIT Max</li>
                   <li>Ramenní opalovače: 7 x 25W</li>
@@ -296,34 +296,13 @@ export default function Home() {
                 <h2>
                   Ergoline Evolution <span>600</span>
                 </h2>
-                <p>
-                  Turbo Power <span>- Rainbow Light -</span>
-                </p>
-              </div>
-
-              <div className="colors">
-                <div className="circle">
-                  <div className="blue"></div>
-                  <span>Čistá a bezchybná pleť</span>
-                </div>
-                <div className="circle">
-                  <div className="green"></div>
-                  <span>Regenerace a relaxace</span>
-                </div>
-                <div className="circle">
-                  <div className="red"></div>
-                  <span>Krásná a hladká kůže</span>
-                </div>
-                <div className="circle">
-                  <div className="yellow"></div>
-                  <span>Radost ze slunce</span>
-                </div>
+                <p>Turbo Power - Tan Extreme Premium Beauty Light</p>
               </div>
             </div>
             <p className="info-text">
               Solárium Ergoline Evolution 600 představuje vylepšenou opalovací
               metodu díky opalovacím trubicím{" "}
-              <span>Rainbow Light (Duhové světlo)</span>. <br />
+              <span>Tan Extreme Premium Beauty Light</span>. <br />
               <br />
               <span>Climatronic</span> pro požadovanou teplotu a{" "}
               <span>Vibra Sound</span> pro zcela nový zvuk.
@@ -336,8 +315,8 @@ export default function Home() {
               header="UV-Technologie"
               text={
                 <ul>
-                  <li>Trubice: 46 x 160W Tan Extreme Premium</li>
-                  <li>Typ trubic: Rainbow Light</li>
+                  <li>Trubice: 46 x 160W Tan Extreme Premium Beauty Light</li>
+                  <li>Typ trubic: Tan Extreme Premium</li>
                   <li>Obličejové výbojky: 3x 500W + Ultra VIT Max Ramenní</li>
                   <li>Opalovače: 7 x 25W Opalovač šíje - 6 x 25W</li>
                 </ul>
